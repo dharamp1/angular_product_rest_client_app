@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Product } from './product';
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +12,6 @@ export class ProductService {
   constructor(private http:HttpClient) { }
 
   getAllProducts(){
-    return this.http.get(this.PRODUCT_REST_API_BASE_URL)
+    return this.http.get<Product[]>(this.PRODUCT_REST_API_BASE_URL)
   }
 }
