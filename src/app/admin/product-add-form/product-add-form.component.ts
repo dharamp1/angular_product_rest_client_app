@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product } from '../product';
 
 @Component({
   selector: 'app-product-add-form',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-add-form.component.css']
 })
 export class ProductAddFormComponent {
+
+  product!:Product;
+
+  addProduct(){
+    
+  }
 
 }
