@@ -10,6 +10,9 @@ import { ProductViewComponent } from './product-view/product-view.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    ProductViewComponent
   ]
 })
 export class AdminModule { }
