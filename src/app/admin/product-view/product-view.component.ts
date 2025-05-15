@@ -16,7 +16,7 @@ export class ProductViewComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.productService.getAllProducts().subscribe(data=>this.products=data)
   }
 
 }
