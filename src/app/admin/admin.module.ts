@@ -16,7 +16,8 @@ import { ProductAddFormComponent } from './product-add-form/product-add-form.com
     FormsModule
   ],
   exports:[
-    ProductViewComponent
+    ProductViewComponent,
+    ProductAddFormComponent
   ]
 })
 export class AdminModule { }

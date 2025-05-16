@@ -1,9 +1,9 @@
-<p>product-add-form works!</p>
-<div class="container">
+<div class="container border rounded m-3 p-3 d-flex flex-column align-items-center">
+    <h2 class="text-center">Product Add Form</h2>
     <form #addForm="ngForm" (submit)="addProduct()">
         <div class="mb-3">
-            <label for="i1">Product Name</label>
-            <input id="i1" name="name" [(ngModel)]="product.name" #name="ngModel" required>
+            <label class="form-label" for="i1">Product Name</label>
+            <input class="form-control" id="i1" name="name" [(ngModel)]="product.name" #name="ngModel" required>
             <div class="alert alert-danger m-2" *ngIf="name.invalid && (name.touched || name.dirty)">
                 <div *ngIf="name.errors">
                     <div *ngIf="name.errors?.['required']">
@@ -13,8 +13,8 @@
             </div>
         </div>
         <div class="mb-3">
-            <label for="i2">Product Brand</label>
-            <input id="i2" name="brand" [(ngModel)]="product.brand" #brand="ngModel" required>
+            <label class="form-label" for="i2">Product Brand</label>
+            <input class="form-control" id="i2" name="brand" [(ngModel)]="product.brand" #brand="ngModel" required>
             <div class="alert alert-danger m-2" *ngIf="brand.invalid && (brand.touched || brand.dirty)">
                 <div *ngIf="brand.errors">
                     <div *ngIf="brand.errors?.['required']">
@@ -24,8 +24,8 @@
             </div>
         </div>
         <div class="mb-3">
-            <label for="i2">Product Price</label>
-            <input id="i2" name="price" [(ngModel)]="product.price" #price="ngModel" required>
+            <label class="form-label" for="i2">Product Price</label>
+            <input class="form-control" id="i2" name="price" [(ngModel)]="product.price" #price="ngModel" required>
             <div class="alert alert-danger m-2" *ngIf="price.invalid && (price.touched || price.dirty)">
                 <div *ngIf="price.errors">
                     <div *ngIf="price.errors?.['required']">
@@ -35,8 +35,8 @@
             </div>
         </div>
         <div class="d-flex justify-content-center gap-3">
-            <button type="submit">Save</button>
-            <button type="reset">Reset</button>
+            <button class="btn btn-outline-success" type="submit">Save</button>
+            <button class="btn btn-secondary" type="reset">Reset</button>
         </div>
     </form>
 </div>
