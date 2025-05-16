@@ -23,7 +23,8 @@ import { HeaderComponent } from './header/header.component';
   exports:[
     ProductViewComponent,
     ProductAddFormComponent,
-    ProductEditFormComponent
+    ProductEditFormComponent,
+    HeaderComponent
   ]
 })
 export class AdminModule { }
