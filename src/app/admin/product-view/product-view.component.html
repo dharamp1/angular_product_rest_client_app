@@ -14,8 +14,8 @@
                 <td>{{product.name}}</td>
                 <td>{{product.brand}}</td>
                 <td>{{product.price}}</td>
-                <td><button>Edit</button></td>
-                <td><button>Delete</button></td>
+                <td><button title="Edit" class="btn btn-warning" (click)="viewEditForm(product)"><i class="bi bi-pencil-fill"></i></button></td>
+                <td><button title="Remove" class="btn btn-danger" (click)="removeProduct(product)"><i class="bi bi-trash-fill"></i></button></td>
             </tr>
         </tbody>
     </table>

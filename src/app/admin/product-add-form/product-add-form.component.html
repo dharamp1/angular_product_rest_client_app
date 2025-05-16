@@ -1,6 +1,6 @@
 <div class="container border rounded m-3 p-3 d-flex flex-column align-items-center">
     <h2 class="text-center">Product Add Form</h2>
-    <form #addForm="ngForm" (submit)="addProduct()">
+    <form #addForm="ngForm" (submit)="addForm.valid && addProduct()">
         <div class="mb-3">
             <label class="form-label" for="i1">Product Name</label>
             <input class="form-control" id="i1" name="name" [(ngModel)]="product.name" #name="ngModel" required>

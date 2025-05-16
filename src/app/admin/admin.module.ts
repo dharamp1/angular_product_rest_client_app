@@ -1,23 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductViewComponent } from './product-view/product-view.component';
 import { ProductAddFormComponent } from './product-add-form/product-add-form.component';
+import { ProductEditFormComponent } from './product-edit-form/product-edit-form.component';
 
 
 
 @NgModule({
   declarations: [
     ProductViewComponent,
-    ProductAddFormComponent
+    ProductAddFormComponent,
+    ProductEditFormComponent
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports:[
     ProductViewComponent,
-    ProductAddFormComponent
+    ProductAddFormComponent,
+    ProductEditFormComponent
   ]
 })
 export class AdminModule { }
